@@ -6,7 +6,7 @@ PCI-Express to OpenCAPI SlimSAS 8x Connector Compatible Adapter PCB.
 
 The [Open Coherant Accelerator Processor Interface (OpenCAPI)](https://opencapi.org/wp-content/uploads/2022/07/OpenCAPI-Overview.pdf) standard has FPGA-based [Advanced Accelerated Cable (AAC)](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) [Add-In cards](https://opencapi.org/wp-content/uploads/2018/12/OpenCAPI-Tech-SC18-Exhibitor-Forum.pdf) such as [ADM-PCIE-9H3](https://www.alpha-data.com/product/adm-pcie-9h3/), [ADM-PCIE-9H7](https://www.alpha-data.com/alpha-data-release-adm-pcie-9h7-data-center-board-with-xilinx-virtex-ultrascale-hbm-fpga/), [ADM-PCIE-9V3](https://www.alpha-data.com/product/adm-pcie-9v3/), [ADM-PCIE-9V5](https://www.alpha-data.com/product/adm-pcie-9v5/), [BittWare XUP-VV4](https://www.bittware.com/fpga/xup-vv4/), [BittWare XUP-VVH](https://www.bittware.com/fpga/xup-vvh/), and [Nvidia Innova-2 Flex](https://www.nvidia.com/en-us/networking/ethernet/innova-2-flex/).
 
-The OpenCAPI SlimSAS connector exposes all the necessary signals for [PCI-Express](https://en.wikipedia.org/wiki/PCI_Express). This project is an attempt to create an adapter capable of connecting to such FPGA boards using PCIe over SlimSAS cables.
+The OpenCAPI SlimSAS interface was designed as a low-latency version of [PCI-Express](https://en.wikipedia.org/wiki/PCI_Express) and includes all necessary signals. This project is an attempt to create an adapter capable of connecting to such FPGA boards using PCIe over SlimSAS cables.
 
 
 
@@ -21,6 +21,8 @@ The OpenCAPI SlimSAS connector exposes all the necessary signals for [PCI-Expres
 # PCB Layout
 
 TODO: Matched-length traces.
+
+4-Layer PCB. Inner 2 layers are GND planes.
 
 ![PCIe-to-SlimSAS 8x Layout](img/PCIe-to-SlimSAS8x_Layout.png)
 
