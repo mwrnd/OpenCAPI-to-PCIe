@@ -1,6 +1,6 @@
 (export (version "E")
   (design
-    (source "/home/user/0pcb/PCIe-to-SlimSAS8x/PCIe-to-SlimSAS8x.kicad_sch")
+    (source "/home/user/PCIe-to-SlimSAS8x/PCIe-to-SlimSAS8x.kicad_sch")
     (date "Sun 15 Jan 2023 02:30:32 AM")
     (tool "Eeschema 6.0.10-86aedd382b~118~ubuntu20.04.1")
     (sheet (number "1") (name "/") (tstamps "/")
