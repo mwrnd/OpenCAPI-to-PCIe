@@ -35,7 +35,7 @@ Only a single component is required, a [U10A474200T](https://www.digikey.com/en/
 
 This is meant to be an early prototype board.
 
-Differential pairs are matched to within 0.5mm intra-pair (N-to-P). The first and last two pairs (RX0-RX1, RX6-RX7, TX0-TX1, TX6-TX7) are matched to within 10mm inter-pair. Not yet certain if the pairs are in the correct order. The current aim is to test the design at PCIe x1 and x2 widths and at least at [PCIe Gen1](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s).
+Differential pairs are matched to within 0.5mm intra-pair (N-to-P). Should work at least at [PCIe Gen1](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s).
 
 
 | Diff. Pair | Length (mm) |
