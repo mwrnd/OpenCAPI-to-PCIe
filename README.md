@@ -1,4 +1,4 @@
-**Work-in-Progress** - First Revision Complete. Waiting for PCB.
+**Work-in-Progress** - Working on Second Revision. I was unable to get the first revision working with the Innova-2.
 
 PCI-Express to OpenCAPI-Compatible SlimSAS 8x Adapter PCB.
 
