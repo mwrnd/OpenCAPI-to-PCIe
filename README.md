@@ -1,4 +1,4 @@
-**Work-in-Progress** - Working on Second Revision. I was unable to get the first revision working with the Innova-2.
+**Work-in-Progress** - Working on Second Revision. I was unable to get the first revision working with the Innova-2. The [OpenPower version of the AAC Spec](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) I used has a different pinout than the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf).
 
 PCI-Express to OpenCAPI-Compatible SlimSAS 8x Adapter PCB.
 
