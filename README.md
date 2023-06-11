@@ -1,8 +1,11 @@
 **Work-in-Progress** - Working on Second Revision. I was unable to get the first revision working with the Innova-2. The [OpenPower version of the AAC Spec](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) I used has a different pinout than the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf).
 
-PCI-Express to OpenCAPI-Compatible SlimSAS 8x Adapter PCB.
+![OpenCAPI Error](img/OpenCAPI_Error.png)
 
-# PCIe-to-SlimSAS8x
+
+
+
+# PCIe to OpenCAPI-Compatible SlimSAS8x
 
 The [Open Coherant Accelerator Processor Interface (OpenCAPI)](https://opencapi.org/wp-content/uploads/2022/07/OpenCAPI-Overview.pdf) [was a standard](https://opencapi.org/2022/08/09/cxl-consortium-and-opencapi-consortium-sign-letter-of-intent-to-transfer-opencapi-specifications-to-cxl/) that had FPGA-based [Advanced Accelerated Cable (AAC)](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) [Add-In cards](https://opencapi.org/wp-content/uploads/2018/12/OpenCAPI-Tech-SC18-Exhibitor-Forum.pdf) such as [ADM-PCIE-9H3](https://www.alpha-data.com/product/adm-pcie-9h3/), [ADM-PCIE-9H7](https://www.alpha-data.com/alpha-data-release-adm-pcie-9h7-data-center-board-with-xilinx-virtex-ultrascale-hbm-fpga/), [ADM-PCIE-9V3](https://www.alpha-data.com/product/adm-pcie-9v3/), [ADM-PCIE-9V5](https://www.alpha-data.com/product/adm-pcie-9v5/), [BittWare XUP-VV4](https://www.bittware.com/fpga/xup-vv4/), [BittWare XUP-VVH](https://www.bittware.com/fpga/xup-vvh/), and [Nvidia Innova-2 Flex](https://www.nvidia.com/en-us/networking/ethernet/innova-2-flex/).
 
@@ -35,26 +38,7 @@ Only a single component is required, a [U10A474200T](https://www.digikey.com/en/
 
 Differential pairs are matched to within 0.5mm intra-pair (N-to-P).
 
-Inter-pair matching:
 
-| Diff. Pair | Length (mm) |
-| -----------|:-----------:|
-| RX0        | 40.2        |
-| RX1        | 30.7        |
-| RX2        | 34.7        |
-| RX3        | 19.8        |
-| RX4        | 18.6        |
-| RX5        | 30.0        |
-| RX6        | 19.2        |
-| RX7        | 22.1        |
-| TX0        | 35.1        |
-| TX1        | 35.5        |
-| TX2        | 35.9        |
-| TX3        | 26.6        |
-| TX4        | 23.0        |
-| TX5        | 44.4        |
-| TX6        | 38.7        |
-| TX7        | 47.2        |
 
 
 ### PCB Stackup
@@ -64,13 +48,11 @@ I am using values from [JLCPCB](https://jlcpcb.com/capabilities/pcb-capabilities
 ![4-Layer Stackup](img/PCIe-to-SlimSAS8x_Layer_Stackup.png)
 
 
+
+
 ### Trace Impedance Control
 
 OpenCAPI uses 85ohm impedance cables. I played with the values until I got the loosest differential pair coupling that is manufacturable with larger tolerances.
 
 ![85ohm Differential Impedance in DigiKey Calculator](img/PCB_Impedance_0.30mm_0.18mm_on_0.21mm_7628.png)
-
-The PCB also includes a 45mm long [Microstrip](https://en.wikipedia.org/wiki/Microstrip) trace to test and compare theory to reality.
-
-![Test Microstrip Trace Impedance](img/PCB_Impedance_Microstrip_0.3mm_on_0.21mm_7628.png)
 
