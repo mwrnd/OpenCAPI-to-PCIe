@@ -32,7 +32,7 @@ The OpenCAPI SlimSAS interface is based on [PCI-Express](https://en.wikipedia.or
 
 ## Design Notes
 
-Refer to the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf). [High Speed Design Video](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s)
+Refer to the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf). Useful [High Speed Design presentation](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s).
 
 Only a single component is required, a [U10A474200T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474200T/14632855)/[U10A474240T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474240T/17066204) SlimSAS 8x Right-Angle SMD Connector. The two [U.FL](https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/U-FL-R-SMT-1-01/3978494)/[UMCC](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1909763-1/4731728) connectors are for test purposes only. 
 
