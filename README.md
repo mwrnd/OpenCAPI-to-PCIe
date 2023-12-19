@@ -1,4 +1,4 @@
-**Work-in-Progress** - Working on Second Revision. I was unable to get the first revision working with the Innova-2. The [OpenPower version of the AAC Spec](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) I used has a different pinout than the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf).
+**Work-in-Progress** - [Second Revision Gerbers ready but not yet ordered](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha). I was unable to get the first revision working with the Innova-2. The [OpenPower version of the AAC Spec](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) I used has a different pinout than the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf).
 
 ![OpenCAPI Error](img/OpenCAPI_Error.png)
 
@@ -14,18 +14,18 @@ The OpenCAPI SlimSAS interface is based on [PCI-Express](https://en.wikipedia.or
 
 
 
-# Schematic
-
-![PCIe-to-SlimSAS 8x Schematic](img/PCIe-to-SlimSAS8x_Schematic.png)
-
-
-
-
 # PCB Layout
 
-4-Layer PCB. Inner 2 layers are GND planes.
+4-Layer PCB. Inner 2 layers are GND planes. Differential pairs are matched to a length of 65mm +/- 1mm both inter-pair and intra-pair (N-to-P).
 
-![PCIe-to-SlimSAS 8x Layout](img/PCIe-to-SlimSAS8x_Layout.png)
+![OpenCAPI to PCIe x8 PCB Layout](img/OpenCAPI-to-PCIe_PCB_Layout.png)
+
+
+
+
+# Schematic
+
+![OpenCAPI to PCIe x8 Schematic](img/OpenCAPI-to-PCIe_Schematic.png)
 
 
 
@@ -36,8 +36,6 @@ Refer to the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com
 
 Only a single component is required, a [U10A474200T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474200T/14632855)/[U10A474240T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474240T/17066204) SlimSAS 8x Right-Angle SMD Connector. The two [U.FL](https://www.digikey.com/en/products/detail/hirose-electric-co-ltd/U-FL-R-SMT-1-01/3978494)/[UMCC](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/1909763-1/4731728) connectors are for test purposes only. 
 
-Differential pairs are matched to within 0.5mm intra-pair (N-to-P).
-
 
 
 
@@ -45,7 +43,7 @@ Differential pairs are matched to within 0.5mm intra-pair (N-to-P).
 
 I am using values from [JLCPCB](https://jlcpcb.com/capabilities/pcb-capabilities).
 
-![4-Layer Stackup](img/PCIe-to-SlimSAS8x_Layer_Stackup.png)
+![4-Layer Stackup](img/Layer_Stackup.png)
 
 
 
@@ -55,4 +53,7 @@ I am using values from [JLCPCB](https://jlcpcb.com/capabilities/pcb-capabilities
 OpenCAPI uses 85ohm impedance cables. I played with the values until I got the loosest differential pair coupling that is manufacturable with larger tolerances.
 
 ![85ohm Differential Impedance in DigiKey Calculator](img/PCB_Impedance_0.30mm_0.18mm_on_0.21mm_7628.png)
+
+
+
 
