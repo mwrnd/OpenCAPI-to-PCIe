@@ -1,6 +1,4 @@
-**Work-in-Progress** - [Second Revision Gerbers ready but not yet ordered](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha). I was unable to get the first revision working with the Innova-2. The [OpenPower version of the AAC Spec](https://files.openpower.foundation/s/xSQPe6ypoakKQdq/download/25Gbps-spec-20171108.pdf) I used has a different pinout than the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf).
-
-![OpenCAPI Error](img/OpenCAPI_Error.png)
+**Work-in-Progress** - Third Revision design under way. [Second Revision](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) is being tested. PCIe x8 using the OpenCAPI connector works but requires a high quality cable and uses a PCIe Lane to Transceiver Channel ordering that Vivado complains about.
 
 
 
@@ -32,9 +30,9 @@ The OpenCAPI SlimSAS interface is based on [PCI-Express](https://en.wikipedia.or
 
 ## Design Notes
 
-Refer to the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf). Useful [High Speed Design presentation](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s).
+Refer to the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf) for the OpenCAPI pinout. Useful [High Speed Design presentation](https://www.youtube.com/watch?v=QG0Apol-oj0&t=2832s).
 
-Only a single component is required for the adapter, a [U10A474200T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474200T/14632855)/[U10A474240T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474240T/17066204) SlimSAS 8x Right-Angle SMD Connector. A SlimSAS 8x Cable is required to use the PCB with an OpenCAPI FPGA Board.
+Only a single component is required for the adapter, a [U10A474200T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474200T/14632855)/[U10A474240T](https://www.digikey.com/en/products/detail/amphenol-cs-commercial-products/U10A474240T/17066204) SlimSAS 8x Right-Angle SMD Connector. A SlimSAS 8x Cable is required to use the adapter with an OpenCAPI FPGA Board.
 
 
 
