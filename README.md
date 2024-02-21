@@ -24,6 +24,8 @@ The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) proj
 
 The Innova2 SmartNIC's XCKU15P FPGA does not have its Configuration Block in the same column as the OpenCAPI GTY transceivers so it is impossible to configure the FPGA within the [PCIe Specification's 100ms time limit](https://pcisig.com/specifications/ecr_ecn_process?speclib=100+ms). Motherboard boot must be delayed to allow the FPGA to configure itself before PCIe devices are enumerated by the host system. This can be accomplished by toggling the POWER button, then pressing and holding the RESET button for a second before releasing it. Or, [connect a capacitor across the reset pins of an ATX motherboard's Front Panel Header](https://github.com/mwrnd/ATX_Boot_Delay):
 
+![Delay Boot Using Capacitor across Front Panel Header Reset Pins](img/Delay_Boot_Using_FrontPanelHeader_Capacitor.jpg)
+
 Using a [3M 8ES8-1DF21-0.75](https://www.trustedparts.com/en/search/8ES8-1DF21-0.75) cable:
 
 ![System with 3M 8ES8-1DF21-0.75 Cable](img/innova2_xdma_opencapi_with_3M_8ES8-1DF21-0.75_Cable.jpg)
@@ -47,11 +49,11 @@ I am working on a third revision of the OpenCAPI-to-PCIe adapter to improve sign
 
 ### Additional OpenCAPI Signals
 
-Additional useful signals from the OpenCAPI connector are routed to a 6x1 0.1" Header. The pinout matches a [TC74 I2C Temperature Sensor](https://www.microchip.com/en-us/product/tc74). Note 3.3V is from the PCIe connector. **PRE** is a Presence Detect pin which is connected to GND via a 50-Ohm resistor on the OpenCAPI AAC Add-In card. **RST** is connected to PCIe RESET and OpenCAPI RESET.
+Additional useful signals from the OpenCAPI connector are routed to a 6x1 0.1" Header. The pinout matches a [TC74 I2C Temperature Sensor](https://www.microchip.com/en-us/product/tc74). Note 3.3V is from the PCIe connector. **PRE** is a Presence Detect pin which is connected to GND via a 50-Ohm resistor on the OpenCAPI AAC Add-In card. **RST** is connected to PCIe/OpenCAPI RESET.
 
 ![TC74A0-3.3VAT in OpenCAPI-to-PCIe Adapter](img/TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter.jpg)
 
-The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project has the ability to [test](https://github.com/mwrnd/innova2_xdma_opencapi/blob/main/README.md#opencapi-i2c-over-xdma) a TC74A0-3.3VAT in an OpenCAPI-to-PCIe Adapter.
+The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project has the ability to [test](https://github.com/mwrnd/innova2_xdma_opencapi/blob/main/README.md#opencapi-i2c-over-xdma) a TC74Ax-3.3VAT in an OpenCAPI-to-PCIe Adapter.
 
 ![TC74A0-3.3VAT Testing in a System](img/TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter_In-System.jpg)
 
