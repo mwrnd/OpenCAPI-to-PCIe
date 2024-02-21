@@ -51,7 +51,7 @@ Additional useful signals from the OpenCAPI connector are routed to a 6x1 0.1" H
 
 The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project has the ability to test a TC74 in a OpenCAPI-to-PCIe Adapter.
 
-![TC74A0-3.3VAT Testing in a System](TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter_In-System.jpg)
+![TC74A0-3.3VAT Testing in a System](img/TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter_In-System.jpg)
 
 
 
