@@ -22,6 +22,8 @@ A third revision of the OpenCAPI-to-PCIe is currently being designed to improve 
 
 The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project is designed to test the OpenCAPI-to-PCIe Adapter using an [Innova2 Flex SmartNIC](https://github.com/mwrnd/innova2_flex_xcku15p_notes).
 
+The Innova2 SmartNIC's XCKU15P FPGA does not have its Configuration Block in the same column as the OpenCAPI GTY transceivers so it is impossible to configure the FPGA within the [PCIe Specification's 100ms time limit](https://pcisig.com/specifications/ecr_ecn_process?speclib=100+ms). Motherboard boot must be delayed to allow the FPGA to configure itself before PCIe devices are enumerated by the host system. This can be accomplished by toggling the POWER button, then pressing and holding the RESET button for a second before releasing it. Or, [connect a capacitor across the reset pins of an ATX motherboard's Front Panel Header](https://github.com/mwrnd/ATX_Boot_Delay):
+
 Using a [3M 8ES8-1DF21-0.75](https://www.trustedparts.com/en/search/8ES8-1DF21-0.75) cable:
 
 ![System with 3M 8ES8-1DF21-0.75 Cable](img/innova2_xdma_opencapi_with_3M_8ES8-1DF21-0.75_Cable.jpg)
