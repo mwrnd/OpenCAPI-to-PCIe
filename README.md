@@ -47,11 +47,11 @@ I am working on a third revision of the OpenCAPI-to-PCIe adapter to improve sign
 
 ### Additional OpenCAPI Signals
 
-Additional useful signals from the OpenCAPI connector are routed to a 6x1 0.1" Header. The pinout matches a [TC74 I2C Temperature Sensor](https://www.microchip.com/en-us/product/tc74). Note 3.3V is from the PCIe connector. **PRE** is a Presence Detect pin which is connected to GND via a 50-Ohm resistor on the OpenCAPI AAC Add-In card. **RST** is connected to PCIe RESET and OpenCAPI reset.
+Additional useful signals from the OpenCAPI connector are routed to a 6x1 0.1" Header. The pinout matches a [TC74 I2C Temperature Sensor](https://www.microchip.com/en-us/product/tc74). Note 3.3V is from the PCIe connector. **PRE** is a Presence Detect pin which is connected to GND via a 50-Ohm resistor on the OpenCAPI AAC Add-In card. **RST** is connected to PCIe RESET and OpenCAPI RESET.
 
 ![TC74A0-3.3VAT in OpenCAPI-to-PCIe Adapter](img/TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter.jpg)
 
-The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project has the ability to test a TC74 in a OpenCAPI-to-PCIe Adapter.
+The [innova2_xdma_opencapi](https://github.com/mwrnd/innova2_xdma_opencapi) project has the ability to [test](https://github.com/mwrnd/innova2_xdma_opencapi/blob/main/README.md#opencapi-i2c-over-xdma) a TC74A0-3.3VAT in an OpenCAPI-to-PCIe Adapter.
 
 ![TC74A0-3.3VAT Testing in a System](img/TC74A0-3.3VAT_in_OpenCAPI-to-PCIe_Adapter_In-System.jpg)
 
