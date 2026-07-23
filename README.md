@@ -11,6 +11,8 @@ The [Open Coherant Accelerator Processor Interface (OpenCAPI)](https://opencapi.
 
 The OpenCAPI SlimSAS interface is based on [PCI-Express](https://en.wikipedia.org/wiki/PCI_Express). This project is an attempt to create an adapter capable of connecting to such FPGA boards using PCIe over SlimSAS cables.
 
+![OpenCAPI-to-PCIe Adapter](img/OpenCAPI-to-PCIe.jpg)
+
 
 
 
