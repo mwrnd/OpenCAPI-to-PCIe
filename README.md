@@ -59,6 +59,8 @@ A SlimSAS 8x Cable such as the [3M 8ES8-1DF21](https://www.trustedparts.com/en/s
 
 Resistor **R1** is shorted to connect `nPRSNT1` to `nPRSNT2_x8`. The trace can be scratched off and `nPRSNT1` can be connected to `nPRSNT2_x1` or `nPRSNT2_x4` to limit the PCIe lane width.
 
+Additional useful signals from the OpenCAPI connector are routed to a [6x1 0.1" Header](https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC061LFBN-RC/810145). The pinout matches a [TC74 I2C Temperature Sensor](https://www.microchip.com/en-us/product/tc74)[[DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/TC74A0-3-3VAT/442720)] for testing I2C. Note 3.3V is from the PCIe connector. **PRE** is a Presence Detect pin which is connected to GND via a 50-Ohm resistor on the OpenCAPI AAC Add-In card. **RST** is connected to PCIe/OpenCAPI RESET.
+
 
 
 
