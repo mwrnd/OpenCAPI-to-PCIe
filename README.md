@@ -17,7 +17,7 @@ The only OpenCAPI board I have to test against is the **Innova-2 MNV303212A-ADLT
 
 ## Issues when used with the Innova-2 MNV303212A RevA2
 
-The [current v0.2 release](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) of this project worked with the [First Release of the `innova2_xdma_opencapi`](https://github.com/mwrnd/innova2_xdma_opencapi/tree/348716249bafc39514cb1a422a8e2fb5f301f859) project:
+The [current v0.2 release](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2) of this project worked with the [First Release of the `innova2_xdma_opencapi`](https://github.com/mwrnd/innova2_xdma_opencapi/tree/348716249bafc39514cb1a422a8e2fb5f301f859) project:
 
 ```
 git clone --revision=348716249bafc39514cb1a422a8e2fb5f301f859 https://github.com/mwrnd/innova2_xdma_opencapi.git
