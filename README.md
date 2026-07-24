@@ -1,4 +1,4 @@
-**Project on Hold** - [Second Revision Gerbers](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) were built and tested but do not work properly with the only OpenCAPI board I have available, the Innova-2 **MNV303212A Rev:A2**.
+**Project on Hold** - [Second Revision Gerbers](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) were built and tested but do not work well with the only OpenCAPI board I have available, the Innova-2 **MNV303212A Rev:A2**.
 
 The [OpenCAPI-to-PCIe_for_MNV303212A_RevA2](https://github.com/mwrnd/OpenCAPI-to-PCIe_for_MNV303212A_RevA2) project is a version of this adapter specifically for the Innova-2 **MNV303212A Rev:A2**.
 
@@ -13,18 +13,25 @@ The OpenCAPI SlimSAS interface is based on [PCI-Express](https://en.wikipedia.or
 
 ![OpenCAPI-to-PCIe Adapter](img/OpenCAPI-to-PCIe.jpg)
 
+This design uses the OpenCAPI pinout from the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf):
+
+![OpenCAPI Pinout from ](img/OpenCAPI_Pinout_0.2-alpha.png)
+
 
 
 
 ## Issues when used with the Innova-2 MNV303212A RevA2
 
-The [Second Revision](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) of this project worked successfully with the [First Release of the `innova2_xdma_opencapi`](https://github.com/mwrnd/innova2_xdma_opencapi/tree/348716249bafc39514cb1a422a8e2fb5f301f859) project but required a [non-standard GTY Channel to PCIe Lane mapping](https://github.com/mwrnd/innova2_xdma_opencapi/blob/348716249bafc39514cb1a422a8e2fb5f301f859/compile.tcl#L14).
+The [Second Revision](https://github.com/mwrnd/OpenCAPI-to-PCIe/releases/tag/v0.2-alpha) of this project worked successfully with the [First Release of the `innova2_xdma_opencapi`](https://github.com/mwrnd/innova2_xdma_opencapi/tree/348716249bafc39514cb1a422a8e2fb5f301f859) project:
+
+```
+git clone --revision=348716249bafc39514cb1a422a8e2fb5f301f859 https://github.com/mwrnd/innova2_xdma_opencapi.git
+wget https://github.com/mwrnd/innova2_xdma_opencapi/releases/download/v0.1/innova2_xdma_opencapi_bitstream.zip
+```
+
+It required a [non-standard GTY Channel to PCIe Lane mapping](https://github.com/mwrnd/innova2_xdma_opencapi/blob/348716249bafc39514cb1a422a8e2fb5f301f859/compile.tcl#L14) that Vivado complains about:
 
 ![Vivado Critical Warning about Lane Ordering](img/Overriding_Physical_Property_Critical_Warning_Message.png)
-
-The Second Revision used the OpenCAPI pinout from the [ADM-PCIE-9V5 User Manual (Pg15-19of38)](https://www.alpha-data.com/xml/user_manuals/adm-pcie-9v5%20user%20manual_v1_4.pdf):
-
-![OpenCAPI Pinout from ](img/OpenCAPI_Pinout_0.2-alpha.png)
 
 
 
